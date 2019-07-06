@@ -5,7 +5,7 @@ import { QuestionService } from './question.service';
 @Component({
   selector: 'app-root',
   template: `
-    <div>
+    <div class="container">
       <h2>Job Application for Heroes</h2>
       <app-dynamic-form [questions]="questions"></app-dynamic-form>
     </div>
