@@ -6,8 +6,11 @@ import { AppComponent }                 from './app.component';
 import { DynamicFormComponent }         from './dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question.component';
 
+import {ButtonsModule} from 'ngx-bootstrap';
+
 @NgModule({
-  imports: [ BrowserModule, ReactiveFormsModule ],
+  imports: [ BrowserModule, ReactiveFormsModule
+  ,ButtonsModule ],
   declarations: [ AppComponent, DynamicFormComponent, DynamicFormQuestionComponent ],
   bootstrap: [ AppComponent ]
 })
