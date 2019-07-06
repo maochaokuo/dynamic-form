@@ -1,7 +1,35 @@
 # dynamic-form
 from angular dynamic form sample
 
+## to do or undone
+
+* dynamic control for multiple records (table)
+* [angular routing](https://www.youtube.com/watch?v=Nehk4tBxD4o&t=75s) and [child routes](https://www.youtube.com/watch?v=ZoeZxpfTCXk&t=284s)
+* need to add standard form items for bootstrap, refer to [Bootstrap Form Inputs](https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp), including
+  * label
+  * textbox
+  * textarea
+  * listbox
+  * combobox
+  * checkbox
+  * radio button
+  * button
+  * grid/table
+* add [electron](https://electronjs.org/docs/tutorial/first-app#installing-electron)
+
+* [ckeditor](https://ckeditor.com/ckeditor-4/) with [base64 paste image plugin](https://ckeditor.com/cke4/addon/pastebase64)
+* [ace](https://ace.c9.io), code editor
+* markdown doc editor ([woofmark](https://github.com/bevacqua/woofmark))
+* [electron vs. nodejs ipc example](https://electronjs.org/docs/api/ipc-main)
+* node read/write json, including application config
+* node ipc rust
+  * via [redis pub sub](https://redis.io/topics/pubsub) ([node](https://github.com/NodeRedis/node_redis) and [rust](https://github.com/mitsuhiko/redis-rs))
+  * via named pipe ([node](https://stackoverflow.com/questions/11750041/how-to-create-a-named-pipe-in-node-js) and rust unavailable yet)
+
+
 ## 2019/7/6
+0. from angular dynamic form sample
+refer to [angular dynamic form](https://angular.io/guide/dynamic-form)
 1. add bootstrap
 refer to [stackoverflow:Angular 4: How to include Bootstrap?](https://stackoverflow.com/questions/43557321/angular-4-how-to-include-bootstrap)
 ```
