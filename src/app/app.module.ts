@@ -1,9 +1,9 @@
-import { BrowserModule }                from '@angular/platform-browser';
-import { ReactiveFormsModule }          from '@angular/forms';
-import { NgModule }                     from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 
-import { AppComponent }                 from './app.component';
-import { DynamicFormComponent }         from './dynamic-form.component';
+import { AppComponent } from './app.component';
+import { DynamicFormComponent } from './dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,8 +14,8 @@ import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   imports: [ BrowserModule, ReactiveFormsModule
-  ,ButtonsModule.forRoot(), DatepickerModule.forRoot(), BrowserAnimationsModule, AlertModule.forRoot()
-  ,BsDropdownModule.forRoot()
+  , ButtonsModule.forRoot(), DatepickerModule.forRoot(), BrowserAnimationsModule, AlertModule.forRoot()
+  , BsDropdownModule.forRoot()
  ],
   declarations: [ AppComponent, DynamicFormComponent, DynamicFormQuestionComponent ],
   bootstrap: [ AppComponent ]
