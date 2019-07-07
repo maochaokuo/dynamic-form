@@ -5,8 +5,9 @@ export class QuestionBase<T> {
   required: boolean;
   order: number;
   controlType: string;
-  type: string;
+  type: string; // textbox
   options: {key: string, value: string}[] = [];
+    // dropdown
   constructor(options: {
       value?: T,
       key?: string,
