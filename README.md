@@ -26,9 +26,12 @@ from angular dynamic form sample
   * via [redis pub sub](https://redis.io/topics/pubsub) ([node](https://github.com/NodeRedis/node_redis) and [rust](https://github.com/mitsuhiko/redis-rs))
   * via named pipe ([node](https://stackoverflow.com/questions/11750041/how-to-create-a-named-pipe-in-node-js) and rust unavailable yet)
 
+## 2019/7/8
+1. add routing to existing project
+need to modify app.module.ts and add app-routing.module.ts, refer to [Angular 2 Cli adding routes to existing project](https://stackoverflow.com/questions/42039988/angular-2-cli-adding-routes-to-existing-project)
 
 ## 2019/7/6
-0. from angular dynamic form sample
+1. from angular dynamic form sample
 refer to [angular dynamic form](https://angular.io/guide/dynamic-form)
 1. add bootstrap
 refer to [stackoverflow:Angular 4: How to include Bootstrap?](https://stackoverflow.com/questions/43557321/angular-4-how-to-include-bootstrap)
