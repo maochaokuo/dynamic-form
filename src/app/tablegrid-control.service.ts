@@ -7,12 +7,12 @@ import { TablegridBase } from './tablegrid-base';
 export class TablegridControlService {
   constructor() { }
 
-  toFormGroup(tablegrid: TablegridBase<any>) {
+  toFormGroup(tablegrid: TablegridBase<any>[]) {
     const group: any = {};
 
     tablegrid.forEach(tg => {
       group[tg.key] = new FormControl(tg.value || '');
-    })
+    });
     return new FormGroup(group);
   }
 }
