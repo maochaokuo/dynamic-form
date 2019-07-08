@@ -1,3 +1,4 @@
+import { CheckboxQuestion } from './question-checkbox';
 import { Injectable } from '@angular/core';
 
 import { DropdownQuestion } from './question-dropdown';
@@ -38,6 +39,14 @@ export class QuestionService {
         label: 'Email',
         type: 'email',
         order: 2
+      }),
+
+      new CheckboxQuestion({
+        key: 'isDirty',
+        label: 'Is dirty or not',
+        // type: 'checkbox',
+        value: 'true',
+        order: 4
       })
     ];
 

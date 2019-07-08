@@ -10,12 +10,12 @@ import { QuestionService } from './question.service';
       <app-dynamic-form [questions]="questions"></app-dynamic-form>
     </div>
     <nav>
-      <a routerLink="/ideas">ideas</a>
-      <a routerLink="/issues">issues</a>
-      <a routerLink="/plans">plans</a>
-      <a routerLink="/projects">projects</a>
-      <a routerLink="/requirements">requirements</a>
-      <a routerLink="/solutions">solutions</a>
+      <a routerLink="/ideas" routerLinkActive="active">ideas</a>
+      <a routerLink="/issues" routerLinkActive="active">issues</a>
+      <a routerLink="/plans" routerLinkActive="active">plans</a>
+      <a routerLink="/projects" routerLinkActive="active">projects</a>
+      <a routerLink="/requirements" routerLinkActive="active">requirements</a>
+      <a routerLink="/solutions" routerLinkActive="active">solutions</a>
     </nav>
     <router-outlet></router-outlet>
   `,

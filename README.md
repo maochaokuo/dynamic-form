@@ -29,6 +29,10 @@ from angular dynamic form sample
 ## 2019/7/8
 1. add routing to existing project
 need to modify app.module.ts and add app-routing.module.ts, refer to [Angular 2 Cli adding routes to existing project](https://stackoverflow.com/questions/42039988/angular-2-cli-adding-routes-to-existing-project)
+can also use angular
+```
+ng g c department-list -it -is
+```
 
 ## 2019/7/6
 1. from angular dynamic form sample
