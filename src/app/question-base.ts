@@ -5,6 +5,8 @@ export class QuestionBase<T> {
   required: boolean;
   order: number;
   controlType: string;
+  isenabled: boolean;
+  isvisible: boolean;
   type: string; // textbox
   options: {key: string, value: string}[] = [];
     // dropdown
@@ -14,7 +16,9 @@ export class QuestionBase<T> {
       label?: string,
       required?: boolean,
       order?: number,
-      controlType?: string
+      controlType?: string,
+      isenabled?: boolean,
+      isvisible?: boolean
     } = {}) {
     this.value = options.value;
     this.key = options.key || '';
@@ -22,5 +26,7 @@ export class QuestionBase<T> {
     this.required = !!options.required;
     this.order = options.order === undefined ? 1 : options.order;
     this.controlType = options.controlType || '';
+    this.isenabled = options.isenabled;
+    this.isvisible = options.isvisible;
   }
 }

@@ -1,19 +1,19 @@
-<div [formGroup]="form">
+<div [formGroup]="form" *ngIf="question.isvisible">
   <label [attr.for]="question.key">{{question.label}}</label>
 
   <div [ngSwitch]="question.controlType">
-
     <input *ngSwitchCase="'textbox'" [formControlName]="question.key" class="form-control"
-            [id]="question.key" [type]="question.type">
+            [id]="question.key" [type]="question.type"
+            [attr.disabled]="question.isenabled ? '' : null">
 
     <input *ngSwitchCase="'checkbox'" [formControlName]="question.key"
-            [id]="question.key" type='checkbox' [checked]="question.value">
+            [id]="question.key" type='checkbox' [checked]="question.value"
+            [attr.disabled]="question.isenabled ? '' : null">
 
     <select [id]="question.key" *ngSwitchCase="'dropdown'" [formControlName]="question.key"
-    class="form-control">
+        class="form-control" [attr.disabled]="question.isenabled ? '' : null">
       <option *ngFor="let opt of question.options" [value]="opt.key">{{opt.value}}</option>
     </select>
-
   </div>
 
   <div class="alert alert-primary" role="alert" *ngIf="!isValid">{{question.label}} is required</div>

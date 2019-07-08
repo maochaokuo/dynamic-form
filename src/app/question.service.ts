@@ -23,7 +23,37 @@ export class QuestionService {
           {key: 'good',   value: 'Good'},
           {key: 'unproven', value: 'Unproven'}
         ],
-        order: 3
+        order: 3,
+        isenabled: true,
+        isvisible: true
+      }),
+
+      new DropdownQuestion({
+        key: 'brave2',
+        label: 'Bravery Rating2',
+        options: [
+          {key: 'solid',  value: 'Solid'},
+          {key: 'great',  value: 'Great'},
+          {key: 'good',   value: 'Good'},
+          {key: 'unproven', value: 'Unproven'}
+        ],
+        order: 3,
+        isenabled: false,
+        isvisible: true
+      }),
+
+      new DropdownQuestion({
+        key: 'brave3',
+        label: 'Bravery Rating3',
+        options: [
+          {key: 'solid',  value: 'Solid'},
+          {key: 'great',  value: 'Great'},
+          {key: 'good',   value: 'Good'},
+          {key: 'unproven', value: 'Unproven'}
+        ],
+        order: 3,
+        isenabled: false,
+        isvisible: false
       }),
 
       new TextboxQuestion({
@@ -31,14 +61,28 @@ export class QuestionService {
         label: 'First name',
         value: 'Bombasto',
         required: true,
-        order: 1
+        order: 1,
+        isenabled: true,
+        isvisible: true
       }),
 
       new TextboxQuestion({
         key: 'emailAddress',
         label: 'Email',
+        value: 'a@a.com',
         type: 'email',
-        order: 2
+        order: 2,
+        isenabled: false,
+        isvisible: true
+      }),
+      new TextboxQuestion({
+        key: 'emailAddress2',
+        label: 'Email2',
+        value: 'a@a.com2',
+        type: 'email',
+        order: 2,
+        isenabled: false,
+        isvisible: false
       }),
 
       new CheckboxQuestion({
@@ -46,7 +90,29 @@ export class QuestionService {
         label: 'Is dirty or not',
         // type: 'checkbox',
         value: 'true',
-        order: 4
+        order: 4,
+        isenabled: true,
+        isvisible: true
+      }),
+
+      new CheckboxQuestion({
+        key: 'isDirty2',
+        label: 'Is dirty or not2',
+        // type: 'checkbox',
+        value: 'true',
+        order: 4,
+        isenabled: false,
+        isvisible: true
+      }),
+
+      new CheckboxQuestion({
+        key: 'isDirty3',
+        label: 'Is dirty or not3',
+        // type: 'checkbox',
+        value: 'true',
+        order: 4,
+        isenabled: false,
+        isvisible: false
       })
     ];
 
