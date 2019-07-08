@@ -26,6 +26,9 @@ from angular dynamic form sample
   * via [redis pub sub](https://redis.io/topics/pubsub) ([node](https://github.com/NodeRedis/node_redis) and [rust](https://github.com/mitsuhiko/redis-rs))
   * via named pipe ([node](https://stackoverflow.com/questions/11750041/how-to-create-a-named-pipe-in-node-js) and rust unavailable yet)
 
+## 2019/7/9
+1. add isenabled, isvisible to form control
+
 ## 2019/7/8
 1. add routing to existing project
 need to modify app.module.ts and add app-routing.module.ts, refer to [Angular 2 Cli adding routes to existing project](https://stackoverflow.com/questions/42039988/angular-2-cli-adding-routes-to-existing-project)

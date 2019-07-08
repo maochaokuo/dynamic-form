@@ -10,6 +10,9 @@ export class TablegridControlService {
   toFormGroup(tablegrid: TablegridBase<any>) {
     const group: any = {};
 
+    tablegrid.forEach(tg => {
+      group[tg.key] = new FormControl(tg.value || '');
+    })
     return new FormGroup(group);
   }
 }
