@@ -5,10 +5,9 @@ import { QuestionService } from './question.service';
 @Component({
   selector: 'app-root',
   template: `
-    <div class="container">
-      <h2>Job Application for Heroes</h2>
-      <app-dynamic-form [questions]="questions"></app-dynamic-form>
-    </div>
+  <div class="container">
+    <h2>Job Application for Heroes</h2>
+    <app-dynamic-form [questions]="questions"></app-dynamic-form>
     <nav>
       <a routerLink="/ideas" routerLinkActive="active">ideas</a>
       <a routerLink="/issues" routerLinkActive="active">issues</a>
@@ -18,6 +17,7 @@ import { QuestionService } from './question.service';
       <a routerLink="/solutions" routerLinkActive="active">solutions</a>
     </nav>
     <router-outlet></router-outlet>
+  </div>
   `,
   providers:  [QuestionService]
 })
