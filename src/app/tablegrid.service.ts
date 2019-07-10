@@ -1,7 +1,38 @@
 import { Injectable } from '@angular/core';
+import { TablegridColumn } from './tablegrid-column';
 
 @Injectable()
 export class TablegridService {
+  // todo undone
+/*
+  getTableDefinitions() {
+    const tabledef = TablegridColumn[{
+      columKey: 'name',
+      columnTitle: 'name',
+      columnWidth: '80px',
+      columnAlign: 'center',
+      columnVisible: true,
+      columnType: 'text',
+      columnWrap: false
+    }, {
+      columKey: 'achievements',
+      columnTitle: 'achievements',
+      columnWidth: '80px',
+      columnAlign: 'right',
+      columnVisible: true,
+      columnType: 'text',
+      columnWrap: false
+    }, {
+      columKey: 'points',
+      columnTitle: 'points',
+      columnWidth: '80px',
+      columnAlign: 'right',
+      columnVisible: true,
+      columnType: 'text',
+      columnWrap: false
+    }];
+    return tabledef;
+  }*/
 
   // TODO: QuestionService get from a remote source of question metadata
   // TODO: QuestionService make asynchronous
