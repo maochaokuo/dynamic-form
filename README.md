@@ -4,7 +4,7 @@ from angular dynamic form sample
 ## to do or undone
 
 * dynamic control for multiple records (table)
-* [angular routing](https://www.youtube.com/watch?v=Nehk4tBxD4o&t=75s) and [child routes](https://www.youtube.com/watch?v=ZoeZxpfTCXk&t=284s)
+*  [child routes](https://www.youtube.com/watch?v=ZoeZxpfTCXk&t=284s)
 * need to add standard form items for bootstrap, refer to [Bootstrap Form Inputs](https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp), including
   * label
   * textbox
@@ -26,11 +26,18 @@ from angular dynamic form sample
   * via [redis pub sub](https://redis.io/topics/pubsub) ([node](https://github.com/NodeRedis/node_redis) and [rust](https://github.com/mitsuhiko/redis-rs))
   * via named pipe ([node](https://stackoverflow.com/questions/11750041/how-to-create-a-named-pipe-in-node-js) and rust unavailable yet)
 
+## 2019/7/10
+1. switching to another computer, fail to rebuild
+```
+npm install -g @angular/cli
+npm install --save-dev @angular-devkit/build-angular
+```
+
 ## 2019/7/9
 1. add isenabled, isvisible to form control
 
 ## 2019/7/8
-1. add routing to existing project
+1. add [angular routing](https://www.youtube.com/watch?v=Nehk4tBxD4o&t=75s) to existing project
 need to modify app.module.ts and add app-routing.module.ts, refer to [Angular 2 Cli adding routes to existing project](https://stackoverflow.com/questions/42039988/angular-2-cli-adding-routes-to-existing-project)
 can also use angular
 ```
