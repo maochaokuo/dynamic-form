@@ -27,7 +27,11 @@ from angular dynamic form sample
   * via named pipe ([node](https://stackoverflow.com/questions/11750041/how-to-create-a-named-pipe-in-node-js) and rust unavailable yet)
 
 ## 2019/7/10
-1. add few more files
+1. switching to another computer, fail to rebuild
+```
+npm install -g @angular/cli
+npm install --save-dev @angular-devkit/build-angular
+```
 
 ## 2019/7/9
 1. add isenabled, isvisible to form control
