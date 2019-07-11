@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { DynamicFormComponent } from './dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question.component';
 
+import { DynamicTablegridComponent } from './dynamic-table.component';
+import { DynamicTableRowComponent } from './dynamic-table-row.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { ButtonsModule} from 'ngx-bootstrap/buttons';
@@ -28,7 +31,7 @@ import { SolutionsComponent } from './pages/solutions/solutions.component';
   , BsDropdownModule.forRoot(), AppRoutingModule
  ],
   declarations: [ AppComponent, DynamicFormComponent, DynamicFormQuestionComponent,
-    routingComponents
+    routingComponents, DynamicTablegridComponent, DynamicTableRowComponent
     /*HomeComponent,
     IdeasComponent, PlansComponent, ProjectsComponent, RequirementsComponent, IssuesComponent,
   SolutionsComponent*/ ],

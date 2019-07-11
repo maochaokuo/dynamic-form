@@ -1,28 +1,28 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
-import { QuestionBase } from './question-base';
-import { QuestionControlService } from './question-control.service';
+import { TablegridBase } from './tablegrid-base';
+import { TablegridControlService } from './tablegrid-control.service';
 
 @Component({
-  selector: 'app-dynamic-form',
-  templateUrl: './dynamic-form.component.html',
-  providers: [ QuestionControlService ]
+  selector: 'app-dynamic-table',
+  templateUrl: './dynamic-table.component.html',
+  providers: [ TablegridControlService ]
 })
-export class DynamicFormComponent implements OnInit {
+export class DynamicTablegridComponent implements OnInit {
 
-  @Input() questions: QuestionBase<any>[] = [];
+  @Input() tablegrids: TablegridBase<any>[] = [];
   form: FormGroup;
   payLoad = '';
 
-  constructor(private qcs: QuestionControlService) {  }
+  constructor(private qcs: TablegridControlService) {  }
 
+// todo undone !!...
   ngOnInit() {
-    this.form = this.qcs.toFormGroup(this.questions);
+    this.form = this.qcs.toFormGroup(this.tablegrids);
   }
 
   onSubmit() {
     this.payLoad = JSON.stringify(this.form.value);
   }
 }
-// todo undone !!...
