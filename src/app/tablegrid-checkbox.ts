@@ -1,9 +1,15 @@
 import { TablegridBase } from './tablegrid-base';
 
 export class CheckboxTablegrid extends TablegridBase<boolean> {
-  controlType = '';
+  controlType = 'checkbox';
+  key: string;
 
-  constructor(options: {} = {}) {
+  constructor(options: {
+    //
+    key?: string,
+  } = {}) {
     super(options);
+    // this.value = options.value;
+    this.key = options.key || '';
   }
 }
