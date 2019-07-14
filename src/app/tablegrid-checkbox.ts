@@ -5,8 +5,7 @@ export class CheckboxTablegrid extends TablegridBase<boolean> {
   key: string;
 
   constructor(options: {
-    //
-    key?: string,
+    key?: string
   } = {}) {
     super(options);
     // this.value = options.value;

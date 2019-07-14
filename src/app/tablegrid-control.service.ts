@@ -7,7 +7,7 @@ import { TablegridBase } from './tablegrid-base';
 export class TablegridControlService {
   constructor() { }
 
-  toFormGroup(tablegrid: TablegridBase<any>[]) {
+  toFormGroup(tablegrid: TablegridBase<any>[]): FormGroup{
     const group: any = {};
 
     tablegrid.forEach(tg => {
